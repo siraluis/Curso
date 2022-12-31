@@ -1,47 +1,46 @@
-/*body comentado*/
-p span{
-    color:greenyellow
+/*Selector HTML*/
+body{
+    background-image: url(./caption.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
 }
 
+p{
+    color: darkgoldenrod;
+}
 
+/*Selector de ID*/
+#contenedor{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(48, 86, 86,0.9);
+    margin: 10px 5px 1px 20px;
+    padding: 20px 50px 3px 10px;
+}
 
+#contenedor2{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(48, 86, 86,0.9);
+    margin: 10px 5px 1px 20px;
+    padding: 20px 50px 3px 10px;
+}
 
+/*Selector de Clase*/
+.parrafo{
+    color: rgb(0, 143, 255);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    font-style:italic;
+}
 
+.titulo{
+    color: #FB00FF;
+    text-align: center;
+    font-weight:bolder;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*body{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background:linear-gradient(
-        to bottom left,
-        rgb(103, 197, 255),
-        rgb(39, 194, 255),
-        rgb(0, 106, 255)
-    )
-}*/
+#parrafo{
+    font-family: roboto;
+}
