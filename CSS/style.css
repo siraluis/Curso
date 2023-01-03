@@ -16,8 +16,30 @@ p{
 
 /*Selector de ID*/
 
-/*  Justify-content Se encarga de trabajar el eje principal de una alineacion
-    Align-items se encarga de trabajar el eje secundario de una alineacion
+/* 
+  Glosario
+    - display: indica la manera ne la que se muestra el contenido.
+
+    - flex-direction: indica la direccion de un elemento tipo flex.
+      (Fila, Columna, Fila inversa, columna inversa... etc)
+
+    - flex-wrap: determina si los elementos flexibles deben romperse 
+      y continuar en una nueva línea o no.
+
+    - grid-wrap: determina si las filas o columnas de la rejilla pueden
+      romperse y continuar en una nueva línea o no.
+
+    - grid-template-columns: permite establecer la cantidad de columnas y su tamaño
+      en un elemento tipo grid.
+
+    - grid-template-rows: permite establecer la cantidad de filas y su tamaño
+      en un elemento tipo grid.
+
+    - justify-content: Se encarga de trabajar el eje principal de una alineacion.
+      (eje horizontal para fila y eje vertical para columna)
+
+    - align-items: se encarga de trabajar el eje secundario de una alineacion.
+      (eje vertical para fila y eje horizontal para columna)
 */
 
 #contenedor{
