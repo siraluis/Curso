@@ -3,7 +3,7 @@
     --colorDeFondo:rgba(78, 26, 86,0.9);
 }
 
-/*Selector HTML*/
+/*Selector HTML (etiqueta)*/
 body{
     background-image: url(./img/caption.jpg);
     background-repeat: no-repeat;
