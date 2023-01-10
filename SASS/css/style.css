@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  top: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+
+main {
+  background: radial-gradient(#0498ae, #082d36);
+  display: grid;
+  grid-template-columns: 80% 20%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: justify-between;
+  padding: 0px 8px 0px 8px;
+  background-color: rgba(255, 255, 255, 0.0588235294);
+}
+aside span {
+  color: greenyellow;
+}
+aside p {
+  color: red;
+}
+aside h2 {
+  color: blue;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  gap: 30px;
+}
+.perfil_avatar {
+  border-radius: 50%;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.1254901961);
+  padding: 20px 10px 0px 10px;
+}
+.perfil_nombre {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.perfil_titulo {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: -25px;
+}
+.perfil_boton {
+  background: linear-gradient(#8e8e8e, #252525);
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+}
+
+.estadistica-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: red;
+}
+.estadistica-perfil .estadistica-elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blue;
+}
+
+.perfil__minibio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ubicacion--perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.galeria_fotoPrincipal img {
+  width: 90px;
+  border-radius: 40%;
+}
+.galeria_fotosAdicionales {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  gap: 5px;
+}
+.galeria_fotosAdicionales img {
+  width: 60px;
+  border-radius: 20%;
+}/*# sourceMappingURL=style.css.map */
