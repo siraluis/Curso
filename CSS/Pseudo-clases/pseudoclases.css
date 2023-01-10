@@ -3,6 +3,10 @@
 	--azul: #3860EC;
 }
 
+*{
+	box-sizing: border-box;
+}
+
 body {
 	background: var(--fondoPrimario);
 	font-family: 'Roboto', sans-serif;
