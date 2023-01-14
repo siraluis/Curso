@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap"/>
         <link rel="stylesheet" href="../css/style.css" />
-        <script src="https://kit.fontawesome.com/552ebddad2.js"></script>
+        <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
         <title>SASS</title>
     </head>
     <body>
@@ -17,44 +17,53 @@
                 <h2 class="perfil_nombre">Diego Rodriguez</h2>
                 <h3 class="perfil_titulo">Desarrollador Web</h3>
                 <div id="botones">
-                    <a class="perfil_boton" href="#">Seguir</a>
-                    <a class="perfil_boton" href="#">Contactar</a>
+                    <a href="https://github.com/Haonter" target="_blank">
+                        <button class="perfil_boton">Seguir</button>
+                    </a>
                 </div>
-                <div class="estadistica-perfil">
-                    <div class="estadistica-elemento">
+                <div class="estadisticas">
+                    <div class="estadisticas-elemento">
                         <h3>5k</h3>
                         <span>Seguidores</span>
                     </div>
-                    <div class="estadistica-elemento">
+                    <div class="estadisticas-elemento">
                         <h3>800</h3>
                         <span>Seguidos</span>
                     </div>
-                    <div class="estadistica-elemento">
+                    <div class="estadisticas-elemento">
                         <h3>48</h3>
                         <span>Repositorios</span>
                     </div>
                 </div>
                 <div class="perfil__minibio">
                     <h2>Acerca de Mi</h2>
-                    <h3>Soy programador de codigo y Bajista</h3>
+                    <h3>"Soy programador de codigo y Bajista"</h3>
                 </div>
                 <div class="ubicacion--perfil">
-                    <h2>Santiago de Chile</h2>
-                    <h3>7km Cerca</h3>
+                    <lord-icon class="ubicacion--perfil-location" src="https://cdn.lordicon.com/fihkmkwt.json" trigger="hover"></lord-icon>
+                    <div class="ubicacion--perfil-texto">
+                        <h2>Santiago de Chile</h2>
+                        <h3>7km Cerca</h3>
+                    </div>
                 </div>
 
                 <!-- Galeria -->
-                <h2>Mis Fotos</h2>
                 <div class="galeria">
-                    <div class="galeria_fotoPrincipal">
-                        <img src="../images/galeria1.jpg"/>
+                    <h2>Mis Fotos</h2>
+                    <div class="galeria_container">
+                        <div class="galeria_fotoPrincipal">
+                            <img src="../images/galeria1.jpg" style="cursor: pointer;"/>
+                        </div>
+                        <div class="galeria_fotosAdicionales">
+                            <img class="galeria_fotosAdicionales-img1" src="../images/galeria2.jpg" style="cursor: pointer;"/>
+                            <img src="../images/galeria3.jpg" style="cursor: pointer;"/>
+                            <img src="../images/galeria4.jpg" style="cursor: pointer;"/>
+                            <img src="../images/galeria5.jpg" style="cursor: pointer;"/>
+                        </div>
                     </div>
-                    <div class="galeria_fotosAdicionales">
-                        <img src="../images/galeria2.jpg"/>
-                        <img src="../images/galeria3.jpg"/>
-                        <img src="../images/galeria4.jpg"/>
-                        <img src="../images/galeria5.jpg"/>
-                    </div>
+                    <a href="mailto:didacusdev@gmail.com" subject="Hola!%20deseo%20contactar%20contigo" target="_blank">
+                        <button class="galeria_boton">Contactar</button>
+                    </a>
                 </div>
             </section>
 

@@ -69,12 +69,10 @@ h1{
     color: aliceblue;
 }
 .caja1:active{
-    background-color: rgb(203, 203, 41);
-    color: black;
+    color: red;
+    background-color: white;
 }
-.pausado{
-    animation-play-state:paused;
-}
+
 
 /*Estilos de caja 2*/
 .caja2{
@@ -95,6 +93,10 @@ h1{
     color: black;
     animation-play-state: paused;
 }
+.caja2:active{
+    background-color: rgb(203, 203, 41);
+    color: black;
+}
 
 /*Estilos de caja 3*/
 .caja3{
@@ -110,7 +112,7 @@ h1{
     cursor: pointer;
 
     animation:
-        animacion1 1s 500ms linear infinite alternate, 
+        animacion1 1s 500ms linear infinite alternate,
         animacion2 6s 2s cubic-bezier(.49,.79,.71,.41) infinite alternate,
         animacion3 5s linear infinite alternate;
 }
@@ -131,7 +133,6 @@ h1{
     }
 }
 
-
 /* Animacion de caja 2*/
 @keyframes animacion2 {
     0%{
@@ -147,8 +148,6 @@ h1{
         transform: translate(-200px, 0px) rotate(-30deg) scale(0.7);
     }
 }
-
-
 
 /* Animacion de caja 3*/
 @keyframes animacion3 {
