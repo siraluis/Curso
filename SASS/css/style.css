@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/* @import "componentes/_globales"
- * @import "componentes/_perfil"
- * @import "componentes/_estadisticas"
- * @import "componentes/_galeria" 
- * */
 /*☝🏻☝🏻☝🏻☝🏻☝🏻☝🏻 EXPLICACION DE MIXINS LUEGO DE LA LINEA 80 ☝🏻☝🏻☝🏻☝🏻☝🏻☝🏻*/
 /*☝🏻 @mixin es una herramienta para reutilizar código / una funcion ☝🏻*/
 /*Mixin SIN PARAMETROS*/
@@ -16,6 +11,7 @@
 
 a:link, a:active, a:visited {
   text-decoration: none;
+  color: white;
 }
 
 body {
@@ -157,6 +153,9 @@ aside h2 {
   -webkit-animation: saltoBoton 600ms 200ms linear alternate infinite running;
           animation: saltoBoton 600ms 200ms linear alternate infinite running;
 }
+.perfil_boton:hover:active, .galeria_boton:hover:active {
+  border-radius: 0px;
+}
 
 .estadisticas {
   display: flex;
@@ -187,7 +186,7 @@ aside h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1137254902);
+  background-color: rgba(255, 255, 255, 0.3333333333);
   padding: 10px 15px 10px 0px;
   border-radius: 10px;
 }
@@ -214,12 +213,15 @@ aside h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 0px 10px 10px;
+  border-radius: 15px;
   gap: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3333333333);
 }
 .galeria_fotoPrincipal img {
   width: 90px;
   border-radius: 40%;
+  border: 1px solid black;
 }
 .galeria_fotosAdicionales {
   display: flex;
@@ -232,22 +234,5 @@ aside h2 {
   border-radius: 20%;
 }
 .galeria_fotosAdicionales img:first-of-type {
-  width: 300px;
-  height: 100px;
-}
-.galeria_boton {
-  /*Con extend, puedo tomar/extender estilos de otro elemento*/
-}
-
-/*Realizar llamado de Componentes (@import)
- * globales,perfil,estadisticas,galeria
- * ---- Ver tambien Seleccionar tipo de input y estado ---
- * Asi: 👉🏻 & input[type="text"], & input::placeholder
- * */
-/*CONFIGURACIONES AVANZADAS DE SASS
- * https://github.com/glenn2223/vscode-live-sass-compiler/blob/HEAD/docs/settings.md
- * Aplicar configuraciones en settings.json
- * */
-/*Para condicionales y operadores logicos: crear una pagina con un boton que al estar :active 
- * cambie el fondo(oscuro) y color de letra(claro), al estar el fondo oscuro y la letra clara, agrandar el tamaño de la letra
- * *//*# sourceMappingURL=style.css.map */
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,6 @@
 $px10: 10px
+$fondoTransparente: #ffffff55
+$borde:5px solid black
 
 /*☝🏻☝🏻☝🏻☝🏻☝🏻☝🏻 EXPLICACION DE MIXINS LUEGO DE LA LINEA 80 ☝🏻☝🏻☝🏻☝🏻☝🏻☝🏻*/
 
@@ -38,8 +40,10 @@ $px10: 10px
 	box-sizing: border-box
 	top: 0px
 	margin: 0px
+
 a:link, a:active, a:visited
 	text-decoration: none
+	color: white
 
 body
 	/*Fondos SVG Gratis
@@ -136,6 +140,8 @@ aside
 	&_boton:hover
 		background: radial-gradient(#0f517d , #021a2b)
 		animation: saltoBoton 600ms 200ms linear alternate infinite running
+		&:active
+			border-radius: 0px
 
 .estadisticas
 	@include rowCenter()
@@ -154,7 +160,7 @@ aside
 
 .ubicacion--perfil
 	@include rowCenter()
-	background-color: #ffffff1d
+	background-color:$fondoTransparente
 	padding: 10px 15px 10px 0px
 	border-radius: 10px
 	&-location
@@ -171,10 +177,12 @@ aside
 	margin-bottom: 20px
 	&_container 
 		@include rowCenter()
+		padding: 10px 0px 10px 10px
+		border-radius: 15px
 		gap: 10px
-		background-color: white
+		background-color:$fondoTransparente
 	&_fotoPrincipal img
-		@include fotoGaleria(90px, 40%)
+		@include fotoGaleria(90px, 40%, 1px solid black)
 	&_fotosAdicionales
 		display: flex
 		flex-wrap: wrap
@@ -183,5 +191,6 @@ aside
 		& img
 			@include fotoGaleria(60px, 20%)
 		& img:first-of-type
-			width: 300px
-			height: 100px
+			border-radius: 20px
+	&_boton
+		@extend .perfil_boton
