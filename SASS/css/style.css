@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/*☝🏻☝🏻☝🏻☝🏻☝🏻☝🏻 EXPLICACION DE MIXINS LUEGO DE LA LINEA 80 ☝🏻☝🏻☝🏻☝🏻☝🏻☝🏻*/
-/*☝🏻 @mixin es una herramienta para reutilizar código / una funcion ☝🏻*/
+/*☝🏻 @mixin es una herramienta para reutilizar código / muy similar a una funcion ☝🏻*/
 /*Mixin SIN PARAMETROS*/
 /*MIXIN CON PARAMETROS*/
 * {
@@ -34,13 +33,15 @@ body::-webkit-scrollbar-thumb {
   border: white;
 }
 
-/* ::-webkit-scrollbar la barra de desplazamiento*/
-/* ::-webkit-scrollbar-button los botones de la barra de desplazamiento (flechas que apuntan hacia arriba y hacia abajo).*/
-/* ::-webkit-scrollbar-thumb el controlador de desplazamiento arrastrable.*/
-/* ::-webkit-scrollbar-track la pista (barra de progreso) de la barra de desplazamiento.*/
-/* ::-webkit-scrollbar-track-piece la pista (barra de progreso) NO está cubierta por el mango.*/
-/* ::-webkit-scrollbar-cornerla esquina inferior de la barra de desplazamiento, donde se encuentran las barras de desplazamiento horizontal y vertical.*/
-/* ::-webkit-resizerel controlador de cambio de tamaño arrastrable que aparece en la esquina inferior de algunos elementos.*/
+/* Pseudoelementos para editar el SCROLLBAR
+ * ::-webkit-scrollbar la barra de desplazamiento
+ * ::-webkit-scrollbar-button los botones de la barra de desplazamiento (flechas que apuntan hacia arriba y hacia abajo).
+ * ::-webkit-scrollbar-thumb el controlador de desplazamiento arrastrable.
+ * ::-webkit-scrollbar-track la pista (barra de progreso) de la barra de desplazamiento.
+ * ::-webkit-scrollbar-track-piece la pista (barra de progreso) NO está cubierta por el mango.
+ * ::-webkit-scrollbar-cornerla esquina inferior de la barra de desplazamiento, donde se encuentran las barras de desplazamiento horizontal y vertical.
+ * ::-webkit-resizerel controlador de cambio de tamaño arrastrable que aparece en la esquina inferior de algunos elementos.
+ * */
 main {
   display: grid;
   grid-template-columns: 80% 20%;
