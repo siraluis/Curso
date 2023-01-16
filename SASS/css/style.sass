@@ -1,21 +1,32 @@
 $px10: 10px
-$fondoTransparente: #ffffff55
-$borde:5px solid black
+$fondoTransparente: #8d8d8d41
+$parametro2:blue
 
-/*☝🏻 @mixin es una herramienta para reutilizar código / muy similar a una funcion ☝🏻*/
+
+/*☝🏻 @mixin es una herramienta para reutilizar bloques de código / son muy similar a una funcion ☝🏻*/
 
 /*Mixin SIN PARAMETROS*/
-@mixin colCenter()
+
+@mixin estiloDeParrafo($miparametro1,$parametro2,$parametro3:null)
+	font-family: monospace
+	color: $miparametro1
+	font-weight: 900
+	background-color: $parametro2
+	font-size: $parametro3
+
+
+
+@mixin colCenter
 	display: flex
 	flex-direction: column
 	align-items: center
 
-@mixin rowCenter()
+@mixin rowCenter
 	display: flex
 	justify-content: center
 	align-items: center
 
-@mixin boton()
+@mixin boton
 	background: radial-gradient(#1e6fa5 , #061625)
 	margin: $px10
 	padding: $px10 20px
@@ -141,6 +152,20 @@ aside
 		animation: saltoBoton 600ms 200ms linear alternate infinite running
 		&:active
 			border-radius: 0px
+
+.prueba
+	@include colCenter
+	width: 350px
+	background-color: yellow
+	padding: 10px
+	&_parrafo1
+		@include estiloDeParrafo(yellow,black,null)
+	&_parrafo2
+		@include estiloDeParrafo(green,red,10px)
+	&_parrafo3
+		@include estiloDeParrafo(red,black,16px)
+	&_parrafo4
+		@include estiloDeParrafo(skyblue,blue,9px)
 
 .estadisticas
 	@include rowCenter()

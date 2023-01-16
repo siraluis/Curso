@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*☝🏻 @mixin es una herramienta para reutilizar código / muy similar a una funcion ☝🏻*/
+/*☝🏻 @mixin es una herramienta para reutilizar bloques de código / son muy similar a una funcion ☝🏻*/
 /*Mixin SIN PARAMETROS*/
 /*MIXIN CON PARAMETROS*/
 * {
@@ -158,6 +158,42 @@ aside h2 {
   border-radius: 0px;
 }
 
+.prueba {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  background-color: yellow;
+  padding: 10px;
+}
+.prueba_parrafo1 {
+  font-family: monospace;
+  color: yellow;
+  font-weight: 900;
+  background-color: black;
+}
+.prueba_parrafo2 {
+  font-family: monospace;
+  color: green;
+  font-weight: 900;
+  background-color: red;
+  font-size: 10px;
+}
+.prueba_parrafo3 {
+  font-family: monospace;
+  color: red;
+  font-weight: 900;
+  background-color: black;
+  font-size: 16px;
+}
+.prueba_parrafo4 {
+  font-family: monospace;
+  color: skyblue;
+  font-weight: 900;
+  background-color: blue;
+  font-size: 9px;
+}
+
 .estadisticas {
   display: flex;
   justify-content: center;
@@ -187,7 +223,7 @@ aside h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.3333333333);
+  background-color: rgba(141, 141, 141, 0.2549019608);
   padding: 10px 15px 10px 0px;
   border-radius: 10px;
 }
@@ -217,7 +253,7 @@ aside h2 {
   padding: 10px 0px 10px 10px;
   border-radius: 15px;
   gap: 10px;
-  background-color: rgba(255, 255, 255, 0.3333333333);
+  background-color: rgba(141, 141, 141, 0.2549019608);
 }
 .galeria_fotoPrincipal img {
   width: 90px;
