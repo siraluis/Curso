@@ -1,4 +1,35 @@
 @charset "UTF-8";
+/*Importaciones de componentes / @import*/
+/*Funciones*/
+/*Loop @each*/
+.parrafo_10 {
+  font-size: 10px;
+}
+
+.parrafo_15 {
+  font-size: 15px;
+}
+
+.parrafo_20 {
+  font-size: 20px;
+}
+
+.parrafo_25 {
+  font-size: 25px;
+}
+
+.parrafo_30 {
+  font-size: 30px;
+}
+
+.parrafo_35 {
+  font-size: 35px;
+}
+
+.parrafo_40 {
+  font-size: 40px;
+}
+
 /*☝🏻 @mixin es una herramienta para reutilizar bloques de código / son muy similar a una funcion ☝🏻*/
 /*Mixin SIN PARAMETROS*/
 /*MIXIN CON PARAMETROS*/
@@ -148,6 +179,7 @@ aside h2 {
   color: #fff;
   -webkit-animation: none;
           animation: none;
+  border: 5px solid rgba(0, 0, 0, 0.5);
 }
 .perfil_boton:hover, .galeria_boton:hover {
   background: radial-gradient(#0f517d, #021a2b);
@@ -156,42 +188,6 @@ aside h2 {
 }
 .perfil_boton:hover:active, .galeria_boton:hover:active {
   border-radius: 0px;
-}
-
-.prueba {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 350px;
-  background-color: yellow;
-  padding: 10px;
-}
-.prueba_parrafo1 {
-  font-family: monospace;
-  color: yellow;
-  font-weight: 900;
-  background-color: black;
-}
-.prueba_parrafo2 {
-  font-family: monospace;
-  color: green;
-  font-weight: 900;
-  background-color: red;
-  font-size: 10px;
-}
-.prueba_parrafo3 {
-  font-family: monospace;
-  color: red;
-  font-weight: 900;
-  background-color: black;
-  font-size: 16px;
-}
-.prueba_parrafo4 {
-  font-family: monospace;
-  color: skyblue;
-  font-weight: 900;
-  background-color: blue;
-  font-size: 9px;
 }
 
 .estadisticas {
