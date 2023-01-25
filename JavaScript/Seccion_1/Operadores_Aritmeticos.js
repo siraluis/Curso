@@ -3,16 +3,15 @@
     realizar operaciones matematicas, sumar, restar, Multiplicar, Dividir.
 */
 
-// 1) Instalar Quokka 
-// 2) Para iniciar Quokka (ctrl+k q)
-// 3) Para detener Quokka (ctrl+k e)
+// 1) Para iniciar Quokka (ctrl+k q)
+// 2) Para detener Quokka (ctrl+k e)
 
 //Suma
 let suma = 5 + 15;
 suma;
 
 //Suma de string
-let nombre = "Diego " ;
+let nombre = "Diego ";
 let apellido = "Rodriguez";
 nombreCompleto = nombre + apellido;
 nombreCompleto;
@@ -44,22 +43,13 @@ residuo;
 //Incremento: Agrega uno a su operando.
 let incremento = 1;
 
-incremento = incremento + 1
+incremento++;
 incremento;
 
-incremento = incremento + 1
+incremento++;
 incremento;
 
-incremento = incremento + 1
-incremento;
-
-incremento = incremento + 1
-incremento;
-
-incremento = incremento + 1
-incremento;
-
-incremento++
+incremento++;
 incremento;
 
 
@@ -67,7 +57,7 @@ incremento;
 
 let decremento = 10;
 
-decremento--
+decremento--;
 decremento;
 
 
@@ -80,9 +70,11 @@ negado;
 
 
 //Positivo Unitario: Intenta convertir el operando en un número, si aún no lo es.
-let positivo = -6;
-+positivo;
-positivo;
+
+//Convierte string a numero
+console.log(+"5");
+//Ya es un numero
+console.log(+2);
 
 
 //Exponenciacion / Potencia: Calcula la base a la potencia del exponente
