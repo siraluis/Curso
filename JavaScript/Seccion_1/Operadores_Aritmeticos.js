@@ -29,9 +29,9 @@ resta;
 let multiplicacion = 5 * 8;
 multiplicacion;
 
-//Divicion
-let divicion = 10 / 2;
-divicion;
+//Division
+let division = 10 / 2;
+division;
 
 
 //Tambien existen operadores aritmeticos para operaciones mas complejas
