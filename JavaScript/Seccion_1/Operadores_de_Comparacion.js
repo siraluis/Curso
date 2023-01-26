@@ -24,13 +24,12 @@ console.log( 1 != "1");
 console.log( 1 != "2");
 
 
-//Estrictamente igual que === : Devuelve true si los operandos son iguales y del mismo tipo de dato.
+//Estrictamente igual que === : retorna true si el valor y el tipo de dato es el mismo.
 
 let numero = 1;
 let numero_2 = 2;
 let caracter_1 = "1";
 let numero_1 = 1;
-
 
 console.log( 1 === "1") ; 
 console.log( 1 === 1) ; 
@@ -39,34 +38,37 @@ console.log( 1 === "2") ;
 
 
 
-// Desigualdad estricta !== : Devuelve true si los operandos son del mismo tipo pero no iguales.
-//  O si son de diferente tipo.
+//Desigualdad estricta !== : Retorna true si el valor y el tipo de dato NO ES EL MISMO.
 
+console.log( 1 !== 1);
+console.log( "1" !== "1");
 console.log( 1 !== "1");
 console.log( 1 !== 2);
-console.log( 1 !== 1);
 console.log( 1 !== "2");
 
 
 
-// Mayor que > : Devuelve true si el operando izquierdo es mayor que el operando derecho.
+//Mayor que > : Devuelve true si el operando izquierdo es mayor que el operando derecho.
 
 console.log(2 > 1);
 console.log(1 > 2);
 
 
-// Menor que < : Devuelve true si el operando izquierdo es menor que el operando derecho.
+
+//Menor que < : Devuelve true si el operando izquierdo es menor que el operando derecho.
 console.log(2 < 1);
 console.log(1 < 2);
 
 
-//  Mayor o igual que >= : 	Devuelve true si el operando izquierdo es mayor o igual que el operando derecho.
+
+//Mayor o igual que >= : 	Devuelve true si el operando izquierdo es mayor o igual que el operando derecho.
 console.log(2 >= 1 );
 console.log(1 >= 2);
 console.log(1 >= 1);
 
 
-//  Menor o igual que <= : Devuelve true si el operando izquierdo es menor o igual que el operando derecho.
+
+//Menor o igual que <= : Devuelve true si el operando izquierdo es menor o igual que el operando derecho.
 console.log(2 <= 1);
 console.log(1 <= 2);
 console.log(1 <= 1);
