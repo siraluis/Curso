@@ -47,7 +47,8 @@ let otroNumero2A = prompt("Ingresa otro numero","If-else Ternario");
 
 
 
-///if - else if - else (Si - Sino Si - Sino)
+//if - else if - else (Si - Sino Si - Sino)
+/*
 let uno = prompt("Ingresa un numero","if - else if - else");
 let dos = prompt("Ingresa otro numero","if - else if - else");
 
@@ -58,10 +59,14 @@ if(uno > dos){
 }else{
     alert(`El numero ${uno} es menor ${dos}`);
 }
+*/
 
+/*
+    Ejercicio extra 1: Realizar un algoritmo que valide si la suma de 2 numeros es mayor, igual o menor
+    a la multiplicacion de otros 2 numeros.
 
-//ejercicios extras: Realizar un algoritmo que valide si la suma de 2 numeros es maroy, igual o menor a 
-// la multiplicacion de otros 2 numeros.
+    Ejercicio extra 2: Realizar un algoritmo que valide si un mensaje(Usuario) en un campo 
+    es identico(===) a otro mensaje(Usuario) en otro campo.
 
+*/
 
-//ejercicios extras: Realizar un algoritmo que valide un mensaje es identico(===) a otro.
