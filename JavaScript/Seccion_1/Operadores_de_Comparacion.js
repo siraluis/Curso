@@ -38,7 +38,7 @@ console.log( 1 === "2") ;
 
 
 
-//Desigualdad estricta !== : Retorna true si el valor y el tipo de dato NO ES EL MISMO.
+//Desigualdad estricta !== : Retorna true si el valor y/o el tipo de dato NO ES EL MISMO.
 
 console.log( 1 !== 1);
 console.log( "1" !== "1");
