@@ -24,7 +24,7 @@ console.log( 1 != "1");
 console.log( 1 != "2");
 
 
-//Estrictamente igual que === : retorna true si el valor y el tipo de dato es el mismo.
+//Estrictamente igual que === : retorna true SI el valor y el tipo de dato ES EL MISMO.
 
 let numero = 1;
 let numero_2 = 2;
@@ -38,7 +38,7 @@ console.log( 1 === "2") ;
 
 
 
-//Desigualdad estricta !== : Retorna true si el valor y/o el tipo de dato NO ES EL MISMO.
+//Desigualdad estricta !== : Retorna true SI el valor y/o el tipo de dato NO ES EL MISMO.
 
 console.log( 1 !== 1);
 console.log( "1" !== "1");
