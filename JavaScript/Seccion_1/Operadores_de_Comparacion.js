@@ -61,7 +61,7 @@ console.log(1 < 2);
 
 
 
-//Mayor o igual que >= : 	Devuelve true si el operando izquierdo es mayor o igual que el operando derecho.
+//Mayor o igual que >= : Devuelve true si el operando izquierdo es mayor o igual que el operando derecho.
 console.log(2 >= 1 );
 console.log(1 >= 2);
 console.log(1 >= 1);
