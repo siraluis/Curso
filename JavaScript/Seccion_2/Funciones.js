@@ -53,7 +53,6 @@ console.log(retiroDeDinero(60));
 // En una funcion, elabora la logica de un cajero automatico que retorne un mensaje de fondo insuficiente
 // cuanto el saldo sea menor o igual a 0
 
-
 // practica 2:
 // Elabora una funcion que compare 2 numeros y retorne si es par o impar
 // tip: usar %
@@ -69,5 +68,3 @@ console.log(retiroDeDinero(60));
 // en caso de ser identicos, solicitar un apellido y mostrar el mensaje:
 // Hola, Me llamo (nombre)(apellido), soy (sexo), tengo (edad) años, y vivo en (pais).
 // Si los nombres no coinciden, retornar, Los nombres deben ser identicos, intentalo nuevamente.
-
-
