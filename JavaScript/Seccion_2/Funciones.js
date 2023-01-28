@@ -50,7 +50,7 @@ console.log(retiroDeDinero(60));
 
 
 //Practica 1:
-// Elabora la logica de un cajero automatico que retorne un mensaje de fondo insuficiente
+// En una funcion, elabora la logica de un cajero automatico que retorne un mensaje de fondo insuficiente
 // cuanto el saldo sea menor o igual a 0
 
 
@@ -63,10 +63,11 @@ console.log(retiroDeDinero(60));
 // es par o impar.
 
 // practica 4:
-// Crea una funcion que guarde reciba los parametros:
+// Crea una funcion que reciba los parametros:
 // nombre1, nombre2, apellido, edad, sexo, pais ingresados mediante propmt,
-// Los guarde en variables separadas, luego
-// los compare y retorne si son identicos, en caso de ser identicos
-// Solicitar un apellido y mostrar el mensaje:
-// Hola, Me llamo (nombre), soy (sexo), tengo (edad) años, y vivo en (pais).
+// los compare y retorne si son identicos.
+// en caso de ser identicos, solicitar un apellido y mostrar el mensaje:
+// Hola, Me llamo (nombre)(apellido), soy (sexo), tengo (edad) años, y vivo en (pais).
 // Si los nombres no coinciden, retornar, Los nombres deben ser identicos, intentalo nuevamente.
+
+
