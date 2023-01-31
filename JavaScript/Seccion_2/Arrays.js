@@ -145,4 +145,37 @@ let uvas = frutas.filter(
 console.log(uvas);
 
 
+//Obtener correos que terminan en "@gmail.com" con .filter() y .endsWith()
 
+let correos = [
+    "juanito@yahoo.com",
+    "pedrito@gmail.com",
+    "rubencito@aol.com",
+    "juanito@yahoo.com",
+    "pedrito@gmail.com",
+    "rubencito@aol.com",
+    "juanito@yahoo.com",
+    "pedrito@gmail.com",
+    "rubencito@aol.com",
+    "juanito@yahoo.com",
+    "pedrito@gmail.com",
+    "rubencito@aol.com",
+    "juanito@yahoo.com",
+    "pedrito@gmail.com",
+    "rubencito@aol.com",
+    "juanito@yahoo.com",
+    "pedrito@gmail.com",
+    "rubencito@aol.com",
+    "juanito@yahoo.com",
+    "pedrito@gmail.com",
+    "rubencito@aol.com",
+]
+
+
+let correosGmail = correos.filter(
+    function(correos){
+        return correos.endsWith("@gmail.com")
+    }
+)
+
+console.log(correosGmail);
