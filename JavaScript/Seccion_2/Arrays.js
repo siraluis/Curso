@@ -177,5 +177,17 @@ let correosGmail = correos.filter(
         return correos.endsWith("@gmail.com")
     }
 )
+let correosAol = correos.filter(
+    function(correos){
+        return correos.endsWith("@aol.com")
+    }
+)
+let correosYahoo = correos.filter(
+    function(correos){
+        return correos.endsWith("@yahoo.com")
+    }
+)
 
 console.log(correosGmail);
+console.log(correosYahoo);
+console.log(correosAol);
