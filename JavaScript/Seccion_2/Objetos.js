@@ -137,7 +137,7 @@ console.log(usuarios.Andres.email)
 
 
 /*
-    Crea un objeto llamado productos, que contenca 5 propiedades, tecnologia,hogar,alimentos,salud,ropa.
+    Crea un objeto llamado productos, que contenga 5 propiedades, tecnologia,hogar,alimentos,salud,ropa.
     cada propiedad debe contener un array de objetos:
 
     - tecnologia, debe ser un objeto con 2 propiedades:
