@@ -138,7 +138,6 @@ console.log(usuarios.Andres.email)
 
 /*
     Crea un objeto llamado productos, que contenga 5 propiedades, tecnologia,hogar,alimentos,salud,ropa.
-    cada propiedad debe contener un array de objetos:
 
     - tecnologia, debe ser un objeto con 2 propiedades:
         * computadoras: debe tener un objeto con 4 propiedades: tipo:[laptop,escritorio], ram:[4gb,8gb,16gb], almacenamiento:[128gb,256gb,512gb,1tb], procesador:[Intel,AMD].
