@@ -10,17 +10,18 @@
 */
 
 
-console.log( mifuncion() );
 
 //Declarativas
+console.log( mifuncion() );
 function mifuncion(){
     return "Hola Me llamo Diego"
 }
 console.log( mifuncion() );
 
 
-//Funciones de Expresion (Anonimas)
 
+//Funciones de Expresion (Anonimas)
+console.log(mifuncion2);
 var mifuncion2 = function(a){
     return  a ;
 }
@@ -191,7 +192,7 @@ resultadoResta;
 
 
 
-/* ----------  EJERCICIO EN CLASE (Hoisting)------------
+/* ----------  EJERCICIO EN CLASE (Con Hoisting)------------
 
     Realizar una funcion que permita encontrar el tipo de dato del parámetro "dato" 
     y retornarlo desde la función "tipoDeDato".
@@ -233,7 +234,7 @@ function tipoDeDato(dato) {
 
 
 
-/* 
+/*
 
     Realizar una función llamada editar que reciba 2 parámetros:
 
@@ -263,3 +264,23 @@ function tipoDeDato(dato) {
     2) ["Daniel", "Juan", "Marcos"] // desapareció 1 elemento (Daniela), se agregó Marcos al final
     3) ["Patricia", "Camilo"] // desaparecieron 2 elmentos (Luisa y Jean), se agregó Camilo al final
 */
+
+function solution(estudiantes, contador, nuevo) {
+    if(contador == 0){
+        console.log(estudiantes);
+        console.log(nuevo);
+        estudiantes.push(nuevo);
+        console.log(estudiantes);
+        return estudiantes;
+    }else if(contador > 0){
+        console.log(estudiantes);
+        console.log(nuevo);
+        estudiantes.splice(-contador,contador,nuevo);
+        return estudiantes;
+    }
+}
+
+
+console.log(solution(["Nicolas", "Julia"], 0, "Santiago"));
+console.log(solution(["Daniel", "Juan", "Daniela"], 1, "Marcos"));
+console.log(solution(["Patricia", "Luisa", "Jean"], 2, "Camilo"));

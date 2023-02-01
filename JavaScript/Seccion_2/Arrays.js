@@ -22,6 +22,7 @@ console.log(colores);
     console.log(colores[2]);
     console.log(colores[3]);
     console.log(colores[4]);
+    console.log(colores[5]);
 
 
 
@@ -72,7 +73,7 @@ console.log(colores);
 
 
 
-//pop: Elimina el elemento al final de un array.
+//pop: Elimina solo 1er elemento al final de un array.
     console.log(colores);
 
     let ultimoEliminado = colores.pop();
@@ -87,7 +88,7 @@ console.log(colores);
 
 
 
-//shift: Elimina el elemento al inicio de un array.
+//shift: Elimina el solo 1er elemento al inicio de un array.
     let primeroEliminado = colores.shift();
     console.log(primeroEliminado);
     console.log(colores);
@@ -102,7 +103,7 @@ console.log(colores);
 
 
 
-/*  filter: es una función de los arrays que permite filtrar los elementos 
+/*  filter(filtrar): es una función de los arrays que permite filtrar los elementos 
     mediante una función de retorno booleana. 
 
     La función de retorno booleana se aplica a cada elemento del array y solo los elementos 
@@ -169,25 +170,177 @@ let correos = [
     "juanito@yahoo.com",
     "pedrito@gmail.com",
     "rubencito@aol.com",
-]
+];
 
 
 let correosGmail = correos.filter(
     function(correos){
-        return correos.endsWith("@gmail.com")
+        return correos.endsWith("@gmail.com"); //Si el elemento termina con "@gmail.com"
     }
-)
+);
+
 let correosAol = correos.filter(
     function(correos){
-        return correos.endsWith("@aol.com")
+        return correos.endsWith("@aol.com"); //Si el elemento termina con "@aol.com"
     }
-)
+);
+
 let correosYahoo = correos.filter(
     function(correos){
-        return correos.endsWith("@yahoo.com")
+        return correos.endsWith("@yahoo.com"); //Si el elemento termina con "@yahoo.com"
     }
-)
+);
+
+
+
 
 console.log(correosGmail);
 console.log(correosYahoo);
 console.log(correosAol);
+
+
+
+
+
+// find(buscar): devuelve el valor del primer elemento del array que cumpla (retorne true) con la función definida. 
+// Si ningún elemento cumple con la funcion (si retorna false), devuelve undefined.
+
+let comidas = ["🍖","🥩","🧀","🥓","🥙"];
+console.log(comidas);
+
+//Ejemplo 1 (find):
+let queso = comidas.find(
+    function(comidas){
+        return comidas === "🧀";
+    }
+);
+
+console.log(queso);
+
+//Ejemplo 2 (find):
+//Si busco un elemento que no este en la lista, retorna undefined
+let tomate = comidas.find(
+    function(comidas){
+        return comidas === "🍅";
+    }
+)
+
+console.log(tomate);
+
+
+
+
+
+
+
+//findindex: devuelve la posicion de la primera coincidencia de un elemento en un array.
+console.log(comidas);
+
+//Ejemplo 1 (¿Cual es la posicion de la tocineta?):
+let indiceTocineta = comidas.findIndex(
+    function(comidas){
+        return comidas === "🥓";
+    }
+)
+
+console.log(indiceTocineta);
+
+
+//Ejemplo 2 (¿Cual es la posicion del mango?):
+//Si no encuentra un elemento retorna undefined
+let indexMango = comidas.find(
+    function(comidas){
+        return comidas === "🥭";
+    }
+)
+
+console.log(indexMango);
+
+
+
+
+
+//fill: Rellena el array con el elemento indicado desde un índice inicial hasta una posicion
+// antes del indice final indicado.
+// Ejemplo: array.fill(elementoNuevo, posicionDeInicio, posicionFinal)
+
+let compra = ["🧃","🧁","🥑","🥦","🥕","🥩","🍞"];
+
+//Como me gusta mucho el helado, voy reemplazar "🥑","🥦","🥕" y "🥩" por "🍦".
+compra.fill("🍦", 2, 6);
+console.log(compra);
+
+
+
+
+
+//every(todos): devuelve true SI TODOS los elementos del array CUMPLEN con la función proporcionada,
+//de lo contrario retorna false.
+
+
+//Ejemplo 1 (¿Todo es par?)
+let listaNumeros = [1,3,5,7,9,11];
+
+//Se evalua si TODOS los elementos del array son pares
+let todosPares = listaNumeros.every(
+    function(number){
+        return (number % 2) === 0;
+    }
+);
+console.log(todosPares);
+
+
+//Ejemplo 2 (¿Todo es impar?)
+
+//Se evalua si todos los elementos del array son impares
+let todosImpares = listaNumeros.every(
+    function (numero){
+        return (numero % 2) === 1;
+    }
+);
+
+console.log(todosImpares);
+
+
+//ejemplo 3 (¿Todo es carne?)
+let comida = ["🥩","🥩","🥩","🥩","🥩"];
+
+let todoCarne = comida.every(
+    function esCarne(elemento){
+        return elemento === "🥩"
+    }
+)
+
+console.log(todoCarne);
+
+
+
+
+
+//some(alguno): devuelve true si alguno de los elementos cumple con la funcion proporcionada,
+//de lo contrario devuelve false.
+
+let vegetales = ["🥦","🥕","🧅","🥬","🍫","🥔"];
+//let vegetales = ["🥦","🥕","🧅","🥬","🍆","🥔"];
+
+//Ejemplo 1 (Alguno es es un chocolate?).
+let noVegetal = vegetales.some(
+    function noEsVegetal(elemento){
+        return elemento === "🍫";
+    }
+);
+
+console.log(noVegetal);
+
+
+//Ejemplo 2 (¿Alguno es el numero 2?)
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const numbers = [1,"2", 3, 4, 5, 6, 7, 8, 9, 10];
+
+const someEven = numbers.some(
+    function igual(number){
+        return number  === 2;
+    }
+);
+
+console.log(someEven);
