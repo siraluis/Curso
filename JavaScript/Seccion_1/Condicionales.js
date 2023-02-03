@@ -9,31 +9,30 @@
 // prompt: es una funcion nativa de JavaScript que muestra una ventana de entrada en el navegador.
 /*
 
-let numero = prompt("Ingresa un numero","Primer placeholder de if");
-let otroNumero = prompt("Ingresa otro numero","Segundo placeholder de if");
+let numero = +prompt("Ingresa un numero","Primer placeholder de if");
+let otroNumero = +prompt("Ingresa otro numero","Segundo placeholder de if");
 
 //Si numero es  menor que otroNumero
 if (numero < otroNumero){
     // Template String: permite mostrar texto y variables en una sola expresion.
     alert(`El numero ${numero} es menor que ${otroNumero}`);
-    alert("El numero " + numero + " es menor que " + otroNumero);
+    //alert("El numero " + numero + " es menor que " + otroNumero);
 }
-
 */
+
 
 
 //if-else (Si - Sino)
 
 /*
-let numero2 = prompt("Ingresa un numero","Primer place holder de If-else");
-let otroNumero2 = prompt("Ingresa otro numero","Segundo placeholder de If-else");
+let numero2 = +prompt("Ingresa un numero","Primer place holder de If-else");
+let otroNumero2 = +prompt("Ingresa otro numero","Segundo placeholder de If-else");
 
 if (numero2 > otroNumero2){
     alert(`El numero ${numero2} es mayor que ${otroNumero2}`); 
 } else{
     alert(`El numero ${numero2} es menor que ${otroNumero2}`);
 }
-
 */
 
 /*
@@ -49,15 +48,15 @@ let otroNumero2A = prompt("Ingresa otro numero","If-else Ternario");
 
 //if - else if - else (Si - Sino Si - Sino)
 /*
-let uno = prompt("Ingresa un numero","if - else if - else");
-let dos = prompt("Ingresa otro numero","if - else if - else");
+let uno = 20;
+let dos = 10;
 
 if(uno > dos){
-    alert(`El numero ${uno} es mayor a ${dos}`);
-}else if(uno == dos){
-    alert(`El numero es ${uno} es igual a ${dos}`);
+    console.log(`El numero ${uno} es mayor a ${dos}`);
+}else if(uno === dos){
+    console.log(`El numero es ${uno} es igual a ${dos}`);
 }else{
-    alert(`El numero ${uno} es menor ${dos}`);
+    console.log(`El numero ${uno} es menor que ${dos}`);
 }
 */
 

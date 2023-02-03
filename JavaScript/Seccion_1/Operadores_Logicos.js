@@ -11,7 +11,7 @@ console.log(true && true);
 console.log(true && false);
 console.log(false && true);
 console.log((1>2) && (4==4));
-console.log('uno' && 'dos');
+console.log( 1 && '2');
 console.log(false && 'uno');
 console.log('uno' && false);
 console.log("uno" && true);
@@ -20,7 +20,7 @@ console.log(false && undefined);
 console.log(null && undefined);
 console.log((true && 1) && true);
 console.log(true && undefined);
-console.log(((5 === "5") || (1 > 0)) && (10 >= "10" || (9 < 6) ));
+
 
 
 
@@ -33,7 +33,9 @@ console.log(false || false);
 console.log(false || true);
 console.log((1>2) || (5>1));
 console.log(("1" == 1) || (6 > 7));
-console.log((1 === "1") || ((1 == "1") ||( 5 > 6)));
+console.log((1 === "1") || ((1 == "1") || ( 5 > 6)));
+
+console.log(((5 === "5") || (1 > 0)) && (10 >= "10" || (9 < 6) ));
 
 
 

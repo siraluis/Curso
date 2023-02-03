@@ -1,6 +1,11 @@
 /******  FUNCIONES  ******/
 
 /*
+    Una función es un bloque de código que se puede ejecutar múltiples veces. 
+    Se puede pensar en una función como una "subrutina" que realiza una tarea específica 
+    y devuelve un resultado. Las funciones permiten encapsular y reutilizar código, 
+    lo que hace que el desarrollo sea más eficiente y fácil de mantener.
+
     Sintaxis
         Palabra reservada (Function (F. Declarativa) var (F. de Expresión)).
         Nombre de Funcion (Para las F. de Expresión se suelen dejar como anonimas). 
@@ -12,16 +17,17 @@
 
 
 //Declarativas
-console.log( mifuncion() );
+
 function mifuncion(){
-    return "Hola Me llamo Diego"
+    let saludo = "Hola Me llamo Diego"
+    return saludo;
 }
-console.log( mifuncion() );
+
+console.log(mifuncion());
 
 
 
 //Funciones de Expresion (Anonimas)
-console.log(mifuncion2);
 var mifuncion2 = function(a){
     return  a ;
 }
@@ -284,3 +290,8 @@ function solution(estudiantes, contador, nuevo) {
 console.log(solution(["Nicolas", "Julia"], 0, "Santiago"));
 console.log(solution(["Daniel", "Juan", "Daniela"], 1, "Marcos"));
 console.log(solution(["Patricia", "Luisa", "Jean"], 2, "Camilo"));
+
+
+
+
+

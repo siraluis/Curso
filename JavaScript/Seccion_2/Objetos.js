@@ -4,7 +4,28 @@
     Las claves son cadenas de texto o símbolos y los valores pueden ser cualquier tipo de datos.
 */
 
+let persona = {
+    nombre : "Jonathan",
+    apellido: "Viloria",
+    edad: 25,
+    pais: "Venezuela",
+    habilidades:["correr","Saltar","Programar"]
+}
 
+
+console.log(persona.nombre);
+console.log(persona.apellido);
+console.log(persona.edad);
+console.log(persona.pais);
+console.log(persona.habilidades[2]);
+
+let mensaje = `Hola, me llamo ${persona.nombre} ${persona.apellido}, tengo ${persona.edad} años y vivo en ${persona.pais}`
+console.log(mensaje);
+
+
+
+
+// Ejemplo AUTO
 let auto = {
     marca: "Chevrolet",
     modelo: "Camaro SS",
@@ -104,32 +125,40 @@ console.log(auto);
 */
 
 
-
+/*
 let usuarios = {};
+let nombre = prompt("Ingresa tu nombre")
+let edad = prompt("Ingresa tu edad")
+let sexo = prompt("Ingresa tu sexo")
+let email = prompt("Ingresa tu email")
+let password = prompt("Ingresa tu password")
+
+
+register(nombre,edad,sexo,email,password);
+register(nombre,edad,sexo,email,password);
 
 //Register
 function register(nombre, edad, sexo, email, password){
+    usuarios[nombre] = {
+        nombre: nombre, 
+        edad:edad, 
+        sexo:sexo,
+        email:email, 
+        password:password,
+    }
     return (
-        usuarios[nombre] = {
-            nombre: nombre, 
-            edad:edad, 
-            sexo:sexo,
-            email:email, 
-            password:password,
-        }
+        //Recursividad: una funcion hace llamado de otra
+        mostrar()
     );
 }
 
-register("Carlos", 30, "Hombre", "carlos@email.com", "1234carlos");
-register("Andres", 25, "Hombre", "andres@email.com", "Andres4321");
+function mostrar(){
+    for (let propiedad in usuarios) {
+        alert(`nombre: ${usuarios[propiedad].nombre} edad: ${usuarios[propiedad].edad} sexo: ${usuarios[propiedad].sexo} email: ${usuarios[propiedad].email} password: ${usuarios[propiedad].password}`)
+    }
+}
+*/
 
-usuarios;
-
-console.log(usuarios.Carlos);
-console.log(usuarios.Andres);
-
-//Ingreso a informacion especifica
-console.log(usuarios.Andres.email)
 
 
 
@@ -173,3 +202,94 @@ console.log(usuarios.Andres.email)
         console.log(productos.hogar.electrodomesticos.tipo[2]); //licuadora
         console.log(productos.ropa.damas.temporada[0]); //invierno
 */
+
+
+
+
+
+let productos = {
+    tecnologia:{
+            computadoras:{
+                tipo:["notebook","escritorio"],
+                ram:["4gb","8gb","16gb"],
+                almacenamiento:["128gb","256gb","512gb","1tb",],
+                procesador:["intel","AMD"]
+            },
+            celulares:{
+                marca:["samsumg","lg","xiaomi","poco"],
+                ram:["4gb","6gb","8gb","12gb","16gb"],
+                almacenamiento:["32gb","64gb","128gb","256gb"]
+            }
+    },
+    hogar:{
+        electrodomesticos:{
+            tipo:["tv","parlante","licuadora","lavadora"],
+            color:["blanco","gris","negro"]
+        },
+        muebles:{
+            tipo:["tv","parlante","licuadora","lavadora"],
+            material:["madera","plastico","metal"],
+            color:["blanco","beige","gris","negro"]
+        }
+    },
+    mercado:{
+        carnes:{
+            animal:["pollo","res","cerdo"]
+        },
+        viveres:{
+            harina:["trigo","maiz"],
+            aceite:["girasol","oliva","maiz"],
+            leche:["completa","soya","almendra","descremada"]
+        },
+        fruver:{
+            frutas:["manzana","pera","uva","fresa","piña"], 
+            vegetales:["lechuga","zanahoria","cebolla","rabano","calabaza"]
+        },
+        aseo:{
+            personal:["shampoo","acondicionador","jabon","crema dental","desodorante"], 
+            hogar:["cloro","desinfectante","jabon","paños"]
+        }
+    },
+    salud:{
+        medicamentos:{
+            con_prescripcion:{
+                jarabe:["Clonazepan", "Tramadol", "Cloperastina", "Terbutalina"], 
+                comprimidos:["Losartan", "Enalapril", "Ácido valproico", "Metformina"]
+            },
+            de_venta_libre:{
+                jarabe:["Acetaminofén", "Loratadina", "Nitazoxanida", "Ambroxol"], 
+                comprimidos:["Cetirizina", "Albendazol", "Trimebutina", "Omeprazol"]
+            }
+        },
+        primeros_auxilios:{
+            proteccion_personal:["mascarillas","lentes protectores"], 
+            curas_y_vendajes:["vendas","tijeras","curitas"], 
+            suministros_para_heridas:["algodon","compresas"]
+        }
+    },
+    ropa:{
+        damas:{
+            prenda:["vestido","jean","blusa","ropa interior","calzado"], 
+            temporada:["invierno","primavera","verano","otoño"], 
+            importado:[true,false]
+        },
+        caballeros:{
+            prenda:["short","jean","camisa","ropa interior","calzado"], 
+            temporada:["invierno","primavera","verano","otoño"], 
+            importado:[true,false]
+        },
+        niños:{
+            prenda:["vestido","short","jean","camisa","blusa","ropa interior","calzado"], 
+            temporada:["invierno","primavera","verano","otoño"], 
+            importado:[true,false]
+        }
+        
+    }
+}
+
+console.log(productos);
+console.log(productos.tecnologia.computadoras.procesador[0]);
+console.log(productos.mercado.viveres.leche[2]);
+console.log(productos.salud.medicamentos.con_prescripcion.comprimidos[0]);
+console.log(productos.hogar.electrodomesticos.tipo[2]);
+console.log(productos.ropa.damas.temporada[0]);

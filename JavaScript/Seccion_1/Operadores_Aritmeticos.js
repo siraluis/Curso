@@ -1,5 +1,5 @@
 /*
-    Operadores Atirmeticos: Se comoce como operadores aritmeticos a los simbolos que nos permiten
+    Operadores Atirmeticos: Son los simbolos que nos permiten
     realizar operaciones matematicas, sumar, restar, Multiplicar, Dividir.
 */
 

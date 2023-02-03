@@ -26,11 +26,6 @@ console.log( 1 != "2");
 
 //Estrictamente igual que === : retorna true SI el valor y el tipo de dato ES EL MISMO.
 
-let numero = 1;
-let numero_2 = 2;
-let caracter_1 = "1";
-let numero_1 = 1;
-
 console.log( 1 === "1") ; 
 console.log( 1 === 1) ; 
 console.log( 1 === 2) ; 
