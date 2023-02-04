@@ -139,3 +139,33 @@ do{
 // Elabora una calculadora con menu.
 // Tips: Usar switch, do-while, de ser necesario operador ternario.
 // maneja las entradas y salidas mediante prompt y alert.
+
+
+let respuesta;
+do{
+    let operaciones = +prompt(`Ingresa el numero de la operacion que quieras realizar
+    1) Sumar
+    2) Restar
+    3) Multiplicar
+    4) Dividir`);
+
+    let numero1= +prompt("Ingresa un numero")
+    let numero2= +prompt("Ingresa el segundo numero")
+    switch (operaciones){
+        case 1:
+            alert(`El resultado de tu suma es ${numero1 + numero2}`);
+            break;
+        case 2:
+            alert(`El resultado de tu resta es ${numero1 - numero2}`);
+            break;
+        case 3:
+            alert(`El resultado de tu multiplicacion es ${numero1 * numero2}`);
+            break;
+        case 4:
+            alert(`El resultado de tu division es ${numero1 / numero2}`);
+            break;
+        default:
+            alert("Opcion no valida");
+    }
+    respuesta = prompt("¿Desear realizar otra operacion? si - no");
+}while(respuesta === "si");
