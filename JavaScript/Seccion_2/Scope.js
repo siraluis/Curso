@@ -12,14 +12,15 @@
 
 let variableGlobal = "Diego"
 
-function imprimirNombre(dato){
+function imprimirNombre(){
     let variableLocal = "Rodriguez"
-    //console.log(variableSuperLocal); //undefined
+
     console.log(variableLocal);
     console.log(variableGlobal);
+    
 
     function funcionLocal(){
-        let variableSuperLocal = "Hola";
+        let variableSuperLocal = "VariableSuperLocal";
         console.log(variableSuperLocal);
         console.log(variableLocal);
         console.log(variableGlobal);
@@ -32,5 +33,7 @@ function imprimirNombre(dato){
 
 console.log(imprimirNombre());
 console.log(variableGlobal);
-// console.log(variableLocal); //undefined
-// console.log(variableSuperLocal); //undefined
+// variableLocal pertenece al scope de la funcion imprimirNombre(), por ende,
+// NO se puede acceder a ella desde el exterior
+//console.log(variableLocal); 
+//console.log(variableSuperLocal); 

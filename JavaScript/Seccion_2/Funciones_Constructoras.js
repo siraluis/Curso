@@ -15,9 +15,9 @@
 */
 
 //Ejemplo 1
-function Usuario(nombre, apellido){
-    this.nombre = nombre;
-    this.apellido = apellido;
+function Usuario(miNombre, miApellido){
+    this.nombre = miNombre;
+    this.apellido = miApellido;
 }
 
 let persona1 = new Usuario("Diego","Rodriguez");

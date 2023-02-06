@@ -1,15 +1,18 @@
 /*
     Se comoce como operadores logicos a los simbolos que nos permiten
-    realizar operaciones binarias (true - false).
+    realizar operaciones logicas binarias (true - false).
 
     Ejemplo:
 */
+
+// &: este simbolo se llama ampersand.
 
 //  AND / Y (&&): devuelve true si AMBOS operandos son true;
 //  Si uno de los comparandos es false devuelve false.
 console.log(true && true);
 console.log(true && false);
 console.log(false && true);
+console.log((1<2) && (4==4));
 console.log((1>2) && (4==4));
 console.log( 1 && '2');
 console.log(false && 'uno');
@@ -22,8 +25,7 @@ console.log((true && 1) && true);
 console.log(true && undefined);
 
 
-
-
+// |: Este simbolo se llama barra vertical.
 //  OR / O || : Devuelve true si ALGUNO de los operandos es true.
 //  SI AMBOS SON FALSOS, devuelve false.
 console.log((5 == 5) || (4 == 3));
@@ -34,7 +36,6 @@ console.log(false || true);
 console.log((1>2) || (5>1));
 console.log(("1" == 1) || (6 > 7));
 console.log((1 === "1") || ((1 == "1") || ( 5 > 6)));
-
 console.log(((5 === "5") || (1 > 0)) && (10 >= "10" || (9 < 6) ));
 
 
@@ -45,7 +46,7 @@ console.log(!false);
 console.log(!true);
 console.log(!0);
 console.log(!1);
-
+console.log( !(5 > 4) );
 
 /* ----- ACTIVIDAD PARA REALIZAR EN CLASE ----- */
     

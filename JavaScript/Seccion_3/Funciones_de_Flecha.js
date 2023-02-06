@@ -22,7 +22,7 @@ console.log( sumar(10,90) );
 
 
 
-//Con Funcion anonima
+// .map() con Funcion anonima
 let mezcla2 = [1,2,"3","cuatro",5,"6",7,"8","9",10,"once"];
 let numeros = [];
 let caracteres = [];
@@ -44,11 +44,16 @@ caracteres;
 // y tipo string en variables difetrentes usando .map y operador ternario.
 
 // Ahora veremos la misma practica con funciones de flecha
-let mezcla = [1,2,"3","cuatro",5,"6",7,"8","9",10,"once"];
-let enteros=[];
+let mezcla = [1,2,"3","cuatro",5,"6",7,"8","9",10,"once",12,"13"];
 let strings=[];
+let enteros=[];
 
-mezcla.map((elemento) => (typeof(elemento) === "string") ? strings.push(elemento) : enteros.push(elemento));
+mezcla.map( (elemento) => {
+    (typeof(elemento) === "string") 
+        ? strings.push(elemento) 
+        : enteros.push(elemento)
+    }
+);
 
 console.log(strings);
 console.log(enteros);

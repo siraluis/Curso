@@ -37,8 +37,8 @@ if (numero2 > otroNumero2){
 
 /*
 //Operador Ternario
-let numero2A = prompt("Ingresa un numero","If-else Ternario");
-let otroNumero2A = prompt("Ingresa otro numero","If-else Ternario");
+let numero2A = +prompt("Ingresa un numero","If-else Ternario");
+let otroNumero2A = +prompt("Ingresa otro numero","If-else Ternario");
 //                       "Si"                                                         "Sino"
 (numero2A < otroNumero2A) ? alert(`El numero ${numero2A} es menor que ${otroNumero2A}`) : console.log(`El numero ${numero2A} es mayor que ${otroNumero2A}`);
 */
@@ -72,6 +72,16 @@ if(uno > dos){
 /*
 
 //Solucion ejercicio 1:
+let campo1 = prompt("Ingresa tu usuario");
+let campo2 = prompt("Ingresa tu usuario nuevamente");
+
+(campo1 === campo2) ? alert("El usuario coincide") : alert("Usuarios distintos" );
+
+
+
+
+
+//Solucion ejercicio 2:
 let suma = +prompt("Suma, primer numero") + +prompt("Suma, segundo numero");
 alert(`Total suma: ${suma}`);
 let multiplicacion = +prompt("Multiplicacion, primer numero") * +prompt("Multiplicacion, segundo numero");
@@ -82,13 +92,5 @@ alert(`Total multiplicacion: ${multiplicacion}`);
     : (suma === multiplicacion)
         ? alert(`El numero ${suma} es igual a ${multiplicacion}`)
         : alert(`El numero ${suma} es menor a ${multiplicacion}`);
-
-
-
-//Solucion ejercicio 2:
-let campo1 = prompt("Ingresa tu usuario");
-let campo2 = prompt("Ingresa tu usuario nuevamente");
-
-(campo1 === campo2) ? alert("El usuario coincide") : alert("Usuarios distintos" );
 
 */

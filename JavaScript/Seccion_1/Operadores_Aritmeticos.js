@@ -73,6 +73,7 @@ negado;
 
 //Convierte string a numero
 console.log(+"5");
+
 //Ya es un numero
 console.log(+2);
 

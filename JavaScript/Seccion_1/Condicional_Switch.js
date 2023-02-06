@@ -1,10 +1,11 @@
-/*Switch: Permite ejecutar un bloque de codigo basandose en casos.
-    La sintaxis de switch consiste en una expresion a evaluar y en base a los resultados esperados,
-    se desarrollan los casos a ejecutar, adicional se coloca break para evitar que se ejecuten los demas
-    casos y default para uns respuesta por defecto en caso de que ningun caso se cumpla.
+/*
+    Switch: Permite ejecutar un bloque de codigo basandose en casos.
+        La sintaxis de switch consiste en una expresion a evaluar y en base a los resultados esperados,
+        se desarrollan los casos a ejecutar, adicional se coloca break para evitar que se ejecuten los demas
+        casos y default para uns respuesta por defecto en caso de que ningun caso se cumpla.
 */
 
-/*
+/**/
 let producto = prompt(
     `Minimarket 🛒
     ¿Que desea comprar?:
@@ -50,7 +51,7 @@ switch(producto){
     default:
         alert("Error - Opcion NO valida");
 }
-*/
+
 
 
 /* ACTIVIDAD - Juego del semaforo.

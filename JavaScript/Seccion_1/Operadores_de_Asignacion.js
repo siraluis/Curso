@@ -43,3 +43,10 @@ let cinco = 5;
 
 cinco *= 5; //Equivale a decir cinco = cinco * 5;
 cinco;
+
+
+// /= asignar y multiplicar
+let numero = 5;
+
+numero /= 5; //Equivale a decir numero = numero / 5;
+numero;

@@ -15,7 +15,6 @@
 */
 
 
-
 //Declarativas
 
 function mifuncion(){
@@ -23,15 +22,11 @@ function mifuncion(){
     return saludo;
 }
 
-console.log(mifuncion());
+
+console.log( mifuncion() );
 
 
 
-//Funciones de Expresion (Anonimas)
-var mifuncion2 = function(a){
-    return  a ;
-}
-console.log( mifuncion2(100) );
 
 
 /*--- Ejemplos ---*/
@@ -58,10 +53,10 @@ function retiroDeDinero(cantidad){
     if((saldo - cantidad) < 0){
         return `Saldo insuficiente, no se pudo retirar ${cantidad}$, tu saldo actual es ${saldo}$`;
     }else if (saldo - cantidad >= 0){
-        saldo-= cantidad; 
+        saldo-= cantidad;  //saldo = saldo - cantidad
         return `Retiraste ${cantidad}$, saldo restante: ${saldo}$`;
     }
-}
+};
 
 //Llamadas a la funcion
 console.log(retiroDeDinero(100));
@@ -290,8 +285,3 @@ function solution(estudiantes, contador, nuevo) {
 console.log(solution(["Nicolas", "Julia"], 0, "Santiago"));
 console.log(solution(["Daniel", "Juan", "Daniela"], 1, "Marcos"));
 console.log(solution(["Patricia", "Luisa", "Jean"], 2, "Camilo"));
-
-
-
-
-
