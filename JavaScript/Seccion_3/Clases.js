@@ -232,12 +232,3 @@ let botonVerRegistros = document.getElementById("verRegistros")
 //Agregando escucha a botones
 botonRegistrar.addEventListener("click",registro);
 botonVerRegistros.addEventListener("click",revelar);
-
-
-
-
-
-
-
-
-
