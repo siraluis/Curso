@@ -35,7 +35,7 @@
 // Guardando elemento de id "parrafo" en una variable llamada parrafo
 // esta variable se usa en varias ocaciones mas adelante.
 let parrafo = document.getElementById("parrafo");
-// let titulo = document.getElementsByTagName("h1")[0];
+//let titulo = document.getElementsByTagName("h1")[0];
 
 
 // console.log(parrafo);
@@ -100,13 +100,13 @@ parrafo.classList.add("animate-bounce", "border-sky-800", "border-4");
 // Comprobar si existe clase "border-sky-800"
 console.log(
     (parrafo.classList.contains("border-sky-800") 
-        ? "El elemento tiene la clase border-sky-800" 
-        : "El elemento no tiene la clase border-sky-800"
+        ? console.log("El elemento tiene la clase border-sky-800")
+        : console.log("El elemento no tiene la clase border-sky-800")
     )
 );
 
 
-parrafo.classList.remove("border-4","animate-bounce");
+//parrafo.classList.remove("border-4","animate-bounce");
 
 
 
@@ -116,10 +116,11 @@ parrafo.classList.remove("border-4","animate-bounce");
 
 
 
+
+// document.createElement("p"): Permite crear un elemento (sin asignacion) en el DOM
 
 // elemento.appendChild: agrega un nodo hijo a un elemento seleccionado.
 
-// document.createElement("p"): PErmite crear un elemento (sin asignacion) en el DOM
 
 //Crear un nuevo elemento (Sin contenido aun)
 let nuevoParrafo = document.createElement("p");
@@ -140,7 +141,5 @@ caja.appendChild(nuevoParrafo2);
 
 
 
-
-
 // elemento.removeChild: elimina un nodo hijo de un elemento seleccionado.
-caja.removeChild(nuevoParrafo2);
+// caja.removeChild(nuevoParrafo2);
