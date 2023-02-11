@@ -10,7 +10,7 @@
     Las expresiones regulares están escritas entre barras / y pueden incluir una combinación de caracteres 
     literales y caracteres especiales que representan un conjunto de caracteres posibles. 
     
-    Por ejemplo, la expresión regular /\d{3}-\d{3}-\d{2}-\d{2}/ busca un número de celular 
+    Por ejemplo, la expresión regular /\d{3}-\d{3}-\d{2}-\d{2}/ busca un número de celular
     en formato 111-111-11-11.
 
     Se pueden usar en una gran variedad de tareas, como validación de formularios, extracción de información 
@@ -43,6 +43,7 @@
         ?       - Coincide con 0 o 1 ocurrencia del patrón anterior.
         {3}     - Numero Exacto
         {3,4}   - Rango de Numeros (Minimo, Maximo)
+        {3,}     - Desde un numero en adelante
 
         Conjuntos de Caracteres
         []      - Caracteres dentro de los brackets
@@ -55,7 +56,17 @@
 
     probar en: http://regexr.com/77g8v
 
-*/
+
+
+    .match y .replace son métodos de manipulación de strings en JavaScript que pueden ser útiles para buscar y 
+    reemplazar patrones de texto en una cadena.
+
+        - El método .match() se utiliza para buscar una coincidencia en una cadena con una expresión regular (regex) 
+        o una subcadena. Devuelve un array con las coincidencias o null si no hay ninguna coincidencia.
+
+        - El método .replace() se utiliza para reemplazar una coincidencia en una cadena con una nueva subcadena. 
+        Devuelve una nueva cadena con el reemplazo realizado.
+    */
 
 
 
@@ -120,8 +131,13 @@ console.log(resultado2)
 
 // Ejemplo de patron numerico especifico
 let regex3 = /\d{3}\s\d{3}\s\d{2}\s\d{2}/g;
-let resultado3 = parrafo.match(regex3);
-console.log(resultado3)
+let expresion = /\w+@gmail.\w{3}/g;
+
+
+console.log(parrafo.match(regex3))
+
+console.log(parrafo.match(expresion))
+
 
 
 
@@ -168,10 +184,56 @@ console.log(texto.match(regexpCoordenadas));
 
 
 
-
 //Verificar si la expresion se encuentra en el parrafo
+// .test() retorna true la expresion regular encuentra una coincidencia en la busqueda
 let gmail = /palabra1/gi
 console.log( gmail.test("algo algo algo algo palabra1") );
+
+
+
+// Rangos [0-9][a-z][A-Z]
+
+let mitexto = "Hola, me llamo Daniel Soto, tengo 13 años y es mi 6ta vez en CANADA";
+let mitexto2 = "34_9Ad-F#G!01z*?";
+
+console.log(mitexto.match(/[0-4]/g));
+console.log(mitexto2.match(/[a-z]/g));
+console.log(mitexto2.match(/[A-Z]/g));
+console.log(mitexto.match(/[0-9]/g));
+console.log(mitexto2.match(/[!#_*-]/g));
+
+
+
+
+
+
+
+/* .replace() */
+// Reemplazar una palabra en una cadena:
+
+const oracion = "El perro persigue al raton.";
+const nuevaOracion = oracion.replace("perro", "gato");
+
+console.log(nuevaOracion); 
+
+
+
+
+
+// Reemplazar todas las apariciones de una subcadena en una cadena:
+const text1 = "el contexto del contexto";
+const nuevoText1 = text1.replace(/con/, "pre");
+
+console.log(nuevoText1);
+
+
+// Reemplazar el tipo de correo por gmail.com
+const correo = "fulanito@tu.com juanito@email.com";
+const correo2 = /\@\w{2,7}/g
+
+console.log(correo.match(correo2));
+console.log(correo.replace(correo2,"@micorreo"))
+
 
 
 
@@ -182,44 +244,59 @@ console.log( gmail.test("algo algo algo algo palabra1") );
 
 
 // Validación de correo electrónico
-let email = "susana_xyz@yahoo.com";
-// let emailRegex =  Tu respuesta aqui 
+let email = "susana_.@no-reply.me";
+let emailRegex =  /^[a-zA-Z0-9._-]+\@[a-zA-Z-]+\.[a-zA-Z]{2,}$/ 
+
 if (email.match(emailRegex)) {
     console.log("El correo electrónico es válido.");
 } else {
     console.log("El correo electrónico no es válido.");
 }
 
+
+
 // Validación de números telefónicos
-let telefono = "412-456-7890";
-// let telefonoRegex =  Tu respuesta aqui
+let telefono = "412-456-7890 123-123-1234";
+let telefonoRegex =  /\d{3}\-\d{3}\-\d{4}/g
+console.log(telefono.match(telefonoRegex));
+
 if (telefono.match(telefonoRegex)) {
     console.log("El número de teléfono es válido.");
 } else {
     console.log("El número de teléfono no es válido.");
 }
 
+
+
 // Validación de fechas en formato MM/DD/YYYY
 let fecha = "10/02/2023";
-// let fechaRegex =  Tu respuesta aqui 
+let fechaRegex =  /\d{2}\/\d{2}\/\d{4}/g
 if (fecha.match(fechaRegex)) {
     console.log("La fecha es válida.");
 } else {
     console.log("La fecha no es válida.");
 }
 
+
+
 // Validación de URLs
-let url = "https://www.mipagina123.com";
-// let urlRegex =  Tu respuesta aqui 
+let url = "https://www.tuv.com";
+let urlRegex = /https:\/{2}w{3}\.\w{3,}\.com/g
+
 if (url.match(urlRegex)) {
     console.log("La URL es válida.");
 } else {
     console.log("La URL no es válida.");
 }
 
+
+
+
+
 // Validación de nombres completos con letras y espacios
 let nombre = "Diego Rodriguez";
-// let nameRegex =  Tu respuesta aqui 
+let nameRegex =  /^[a-zA-Z]+\s[a-zA-Z]+$/
+
 if (nombre.match(nameRegex)) {
     console.log("El nombre es válido.");
 } else {
